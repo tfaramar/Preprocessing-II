@@ -1,1 +1,49 @@
 // Navigation Styles here
+
+.container-header {
+  width: 100%;
+  border-bottom: 2px dashed @navigation-border;
+  padding: 25px 65px;
+  display: flex;
+  flex-direction: row;
+
+  @media @mobile {
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 55px;
+  }
+
+  .header-nav {
+    width: 40%;
+    padding: 0 30px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media @mobile {
+      width: 100%;
+      padding: 0;
+    }
+
+    a {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  .company-header {
+    width: 60%;
+
+    @media @mobile {
+      width: 100%;
+      text-align: center;
+      font-size: 3rem;
+      padding: 10px 0 14px 0;
+    }
+  }
+
+
+}
